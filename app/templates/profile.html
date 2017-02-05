@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block css %} 
+
+img{
+  float: left;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    float: right;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+
+th{
+    background-color: #dddddd;
+}
+
+hr{
+	 border-top: 1px solid #ccc;
+}
+
+{% endblock%}
+
+{% block main %}
+
+<h1 class="page-header">Profile</h1>
+
+<img src= "{{ url_for('static', filename='image/cats.jpg')}}"></img>
+
+<table>
+  <tr>
+    <th>Camay Allen</th>
+  </tr>
+  <tr>
+    <td>Today's date is {{name}}<hr><strong>Username:</strong> YamacNella<br><strong>ID Number:</strong> 620079027<br><strong>Age:</strong> 21<br><strong>Gender:</strong> Female<hr>I am a girl.</td>
+  </tr>
+</table>
+
+{% endblock %}
+       
